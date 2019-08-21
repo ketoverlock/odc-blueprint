@@ -201,7 +201,7 @@ textarea:focus,
   transition: all 0.3s ease-in-out; }
 
 a {
-  color: #183143;
+  color: #406174;
   text-decoration: none; }
   a img {
     transform: translate3d(0px, 0px, 0px);
@@ -209,7 +209,7 @@ a {
 
 a:focus,
 a:hover {
-  color: #8AC3D7;
+  color: #82a28a;
   text-decoration: none; }
   a:focus img,
   a:hover img {
@@ -412,7 +412,7 @@ textarea,
   .woocommerce-checkout table.cart td.actions .coupon .input-text:hover,
   .woocommerce-checkout table.cart td.actions .coupon .input-text:focus,
   .woocommerce-checkout table.cart td.actions .coupon .input-text:active {
-    border-color: #8AC3D7; }
+    border-color: #82a28a; }
 
 input[type="text"],
 input[type="email"],
@@ -448,9 +448,9 @@ input[type="submit"],
 .woocommerce #respond input#submit,
 .woocommerce #respond input#submit.alt,
 .woocommerce div.product .woocommerce-tabs ul.tabs li a {
-  background: #183143;
+  background: #406174;
   color: #fff;
-  border-color: #183143;
+  border-color: #406174;
   font-weight: 700;
   padding: 10px 20px !important;
   text-decoration: none !important;
@@ -486,8 +486,8 @@ input[type="submit"],
   .woocommerce #respond input#submit.alt:focus,
   .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,
   .woocommerce div.product .woocommerce-tabs ul.tabs li a:focus {
-    background: #8AC3D7;
-    border-color: #8AC3D7;
+    background: #82a28a;
+    border-color: #82a28a;
     color: #fff; }
 
 .button {
@@ -518,7 +518,7 @@ fieldset {
   fieldset legend {
     padding: 15px;
     font-weight: 700;
-    color: #8AC3D7; }
+    color: #82a28a; }
 
 /* Search Form
 --------------------------------------------- */
@@ -683,7 +683,7 @@ img.alignnone,
 .menu-toggle,
 .menu-close {
   background: none;
-  color: #183143;
+  color: #406174;
   font-size: 25px;
   font-size: 2.5rem;
   padding-right: 0;
@@ -692,7 +692,7 @@ img.alignnone,
   .menu-close:hover,
   .menu-close:focus {
     background: none;
-    color: #8AC3D7; }
+    color: #82a28a; }
 
 .menu-close {
   float: right;
@@ -721,7 +721,7 @@ img.alignnone,
       font-size: 1.8rem;
       text-align: center;
       padding: 10px;
-      color: #183143;
+      color: #406174;
       font-family: "Open Sans Condensed", sans-serif; }
     .mobile-nav .nav-primary .sub-menu {
       background: #f7f7f7; }
@@ -732,11 +732,11 @@ img.alignnone,
     font-size: 20px;
     font-size: 2rem;
     background: none;
-    color: #183143;
+    color: #406174;
     border: 0; }
     .mobile-nav .submenu-toggle:hover, .mobile-nav .submenu-toggle:focus {
       background: none;
-      color: #183143; }
+      color: #406174; }
 
 .admin-bar .mobile-nav {
   top: 46px; }
@@ -781,7 +781,7 @@ img.alignnone,
 --------------------------------------------- */
 .superheader {
   position: relative;
-  background: #183143;
+  background: #406174;
   font-size: 12px;
   font-size: 1.2rem;
   color: #fff;
@@ -792,7 +792,7 @@ img.alignnone,
   .superheader p {
     margin: 0; }
   .superheader a {
-    color: #8AC3D7; }
+    color: #82a28a; }
     .superheader a:hover, .superheader a:focus {
       color: #fff; }
 
@@ -867,9 +867,9 @@ img.alignnone,
   .entry-meta a {
     color: #333; }
     .entry-meta a:hover {
-      color: #183143; }
+      color: #406174; }
   .entry-meta i {
-    color: #183143; }
+    color: #406174; }
 
 .entry-comments-link {
   margin-left: 10px; }
@@ -897,7 +897,7 @@ img.alignnone,
   .entry-content h4,
   .entry-content h5,
   .entry-content h6 {
-    color: #183143; }
+    color: #406174; }
 
 .entry-footer {
   clear: both;
@@ -1020,7 +1020,7 @@ img.alignnone,
   left: 0;
   width: 100%;
   height: 100%;
-  background: #8AC3D7;
+  background: #82a28a;
   opacity: .2; }
 
 /* Footer
@@ -1050,12 +1050,12 @@ img.alignnone,
 .woocommerce .woocommerce ul.products li.product h3 {
   font-size: 27px;
   font-size: 2.7rem;
-  color: #183143; }
+  color: #406174; }
 
 .woocommerce ul.products li.product .price,
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
-  color: #8AC3D7;
+  color: #82a28a;
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 20px;
   font-size: 2rem; }
@@ -1076,7 +1076,7 @@ p.demo_store {
   position: fixed !important;
   top: auto !important;
   bottom: 0 !important;
-  background-color: #183143 !important;
+  background-color: #406174 !important;
   color: #fff; }
 
 /* Single Products */
@@ -1145,12 +1145,12 @@ p.demo_store {
     display: block;
     padding: 10px;
     text-align: center;
-    color: #183143;
+    color: #406174;
     font-family: "Open Sans Condensed", sans-serif;
     text-transform: uppercase; }
     .woocommerce-account .woocommerce-MyAccount-navigation a:hover, .woocommerce-account .woocommerce-MyAccount-navigation a:focus {
       color: #f7f7f7;
-      background: #183143; }
+      background: #406174; }
 
 /* Responsive Styles
 ---------------------------------------------------------------------------------------------------- */
@@ -1284,10 +1284,10 @@ p.demo_store {
         font-size: 1.8rem;
         text-align: center;
         padding: 10px 15px;
-        color: #183143;
+        color: #406174;
         font-family: "Open Sans Condensed", sans-serif; }
         .nav-primary .genesis-nav-menu a:hover, .nav-primary .genesis-nav-menu a:focus {
-          color: #8AC3D7; }
+          color: #82a28a; }
       .nav-primary .genesis-nav-menu > li:first-of-type > a {
         padding-left: 0; }
       .nav-primary .genesis-nav-menu > li:last-of-type > a {
