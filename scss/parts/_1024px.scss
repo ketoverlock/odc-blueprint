@@ -275,6 +275,19 @@
 
     /* Footer
     --------------------------------------------- */
+    
+    .footer-widgets {
+        
+        .wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .widget-area + .widget-area {
+            margin: 0;
+        }
+        
+    }
 
     /* Home Page
     --------------------------------------------- */
