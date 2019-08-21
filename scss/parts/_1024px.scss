@@ -283,6 +283,10 @@
             justify-content: space-between;
         }
         
+        .widget-area {
+            max-width: 32.333%;
+        }
+        
         .widget-area + .widget-area {
             margin: 0;
         }
