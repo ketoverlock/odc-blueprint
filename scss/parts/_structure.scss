@@ -359,8 +359,8 @@
 
 .footer-widgets {
     
-    .widget {
-        margin: 15px auto;
+    .widget-area + .widget-area {
+        margin-top: 30px;
     }
     
 }
