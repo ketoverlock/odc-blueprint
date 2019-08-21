@@ -357,11 +357,28 @@
 /* Footer
 --------------------------------------------- */
 
+.footer-widgets {
+    
+    .widget {
+        margin-bottom: 30px;
+    }
+    
+    .widget-area:last-of-type .widget:last-of-type {
+        margin-bottom: 0;
+    }
+    
+}
+
 .site-footer {
 	text-align: center;
 	font-size: 12px;
 	font-size: 1.2rem;
 	text-transform: uppercase;
+    padding: 15px 0;
+    
+    p {
+        margin: 0 auto;
+    }
 }
 
 /* Home Page
