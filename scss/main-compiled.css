@@ -1025,6 +1025,12 @@ img.alignnone,
 
 /* Footer
 --------------------------------------------- */
+.site-footer {
+  text-align: center;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
+
 /* Home Page
 --------------------------------------------- */
 /* Plugins & Widgets
