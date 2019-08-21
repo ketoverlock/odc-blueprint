@@ -331,13 +331,13 @@ input[type="submit"],
 .woocommerce input.button.alt, 
 .woocommerce input.button[type="submit"], 
 .woocommerce #respond input#submit, 
-.woocommerce #respond input#submit.alt,
-.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+.woocommerce #respond input#submit.alt {
     background: $color-primary;
     color: $white;
     border-color: $color-primary;
     font-weight: 700;
     padding: 10px 20px !important;
+    border-radius: 0;
     text-decoration: none !important;
     -webkit-appearance: none;
     
