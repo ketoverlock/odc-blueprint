@@ -171,7 +171,7 @@ html {
 body {
   background-color: #fff;
   color: #333;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
   font-weight: 400;
@@ -272,14 +272,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px; }
 
 h1,
 .entry-title {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 30px;
   font-size: 3rem; }
 
@@ -722,7 +722,7 @@ img.alignnone,
       text-align: center;
       padding: 10px;
       color: #406174;
-      font-family: "Open Sans Condensed", sans-serif; }
+      font-family: "Poppins", sans-serif; }
     .mobile-nav .nav-primary .sub-menu {
       background: #f7f7f7; }
   .mobile-nav .submenu-toggle {
@@ -818,7 +818,7 @@ img.alignnone,
   margin: 0 auto; }
 
 .site-title {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 38px;
   font-size: 3.8rem;
   line-height: 1; }
@@ -859,7 +859,7 @@ img.alignnone,
   color: #333; }
 
 .entry-meta {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -1056,7 +1056,7 @@ img.alignnone,
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
   color: #82a28a;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-size: 2rem; }
 
@@ -1146,7 +1146,7 @@ p.demo_store {
     padding: 10px;
     text-align: center;
     color: #406174;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase; }
     .woocommerce-account .woocommerce-MyAccount-navigation a:hover, .woocommerce-account .woocommerce-MyAccount-navigation a:focus {
       color: #f7f7f7;
@@ -1285,7 +1285,7 @@ p.demo_store {
         text-align: center;
         padding: 10px 15px;
         color: #406174;
-        font-family: "Open Sans Condensed", sans-serif; }
+        font-family: "Poppins", sans-serif; }
         .nav-primary .genesis-nav-menu a:hover, .nav-primary .genesis-nav-menu a:focus {
           color: #82a28a; }
       .nav-primary .genesis-nav-menu > li:first-of-type > a {
