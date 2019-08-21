@@ -1,0 +1,277 @@
+/* Large Tablet / Small Desktop Styles
+---------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+    
+    /* Containers & General Styles
+    --------------------------------------------- */
+    
+    body {
+        font-size: 16px;
+        font-size: 1.6rem;
+    }
+    
+    .five-sixths,
+    .four-sixths,
+    .one-fourth,
+    .one-half,
+    .one-sixth,
+    .one-third,
+    .three-fourths,
+    .three-sixths,
+    .two-fourths,
+    .two-sixths,
+    .two-thirds {
+        float: left;
+        margin-left: 2.564102564102564%;
+    }
+
+    .one-half,
+    .three-sixths,
+    .two-fourths {
+        width: 48.717948717948715%;
+    }
+
+    .one-third,
+    .two-sixths {
+        width: 31.623931623931625%;
+    }
+
+    .four-sixths,
+    .two-thirds {
+        width: 65.81196581196582%;
+    }
+
+    .one-fourth {
+        width: 23.076923076923077%;
+    }
+
+    .three-fourths {
+        width: 74.35897435897436%;
+    }
+
+    .one-sixth {
+        width: 14.52991452991453%;
+    }
+
+    .five-sixths {
+        width: 82.90598290598291%;
+    }
+
+    .first {
+        clear: both;
+        margin-left: 0;
+    }
+    
+    .site-inner {
+        margin: 60px auto;
+    }
+    
+    .alignright {
+        float: right;
+        margin: 0 0 15px 15px;
+    }
+    
+    .alignleft {
+        float: left;
+        margin: 0 15px 15px 0;
+    }
+    
+    .alignwide {
+        margin-left: -75px;
+        margin-right: -75px;
+        max-width: 1300px;
+        margin-bottom: 30px;
+    }
+    
+    .wp-block-image.alignwide {
+        text-align: center;
+    }
+    
+    .js {
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all .8s ease-in-out;
+        }
+        
+        .fade-in--visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
+
+    /* Header
+    --------------------------------------------- */
+    
+    .superheader {
+        font-size: 16px;
+        font-size: 1.6rem;
+        padding: 10px 0;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+    
+    .nav-primary {
+        display: block;
+        flex: 1 1 auto;
+        
+        .genesis-nav-menu {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: right;
+
+            > li {
+                position: relative;
+                display: inline-block;
+            }
+            
+            a {
+                display: block;
+                font-size: 18px;
+                font-size: 1.8rem;
+                text-align: center;
+                padding: 10px 15px;
+                color: $color-primary;
+                font-family: $font-secondary;
+                
+                &:hover,
+                &:focus {
+                    color: $color-secondary;
+                }
+            }
+            
+            > li:first-of-type > a {
+                padding-left: 0;
+            }
+
+            > li:last-of-type > a {
+                padding-right: 0;
+            }
+            
+             .sub-menu {
+                position: absolute;
+                display: none;
+                top: 100%;
+                left: 0;
+                width: 200px;
+                background: $white;
+                box-shadow: 0px 10px 15px fade-out($black, .95);
+                z-index: 1000; /* Above Everything */
+
+                li {
+                    display: block;
+                }
+
+                a {
+                    padding: 10px 20px;
+                    text-align: left;
+                }
+
+                .sub-menu {
+                    display: none;
+                    top: 0;
+                    left: 100%;
+                }
+            }
+
+            li:hover > .sub-menu,
+            li:focus-within > .sub-menu {
+                display: block;
+            }
+        }
+
+    }
+    
+    .site-header {
+        transition: all .3s ease-in-out;
+        transform:translate3d(0,0,0);
+    }
+
+    .site-header--sticky {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        padding: 15px 0;
+        box-shadow: 0px 10px 15px fade-out($black, .95);
+        z-index: 500; /* Above Everything */
+        
+        .site-title {
+            font-size: 40px;
+            font-size: 4rem;
+        }
+        
+        .custom-logo {
+            max-height: 70px;
+        }
+    }
+    
+    .admin-bar .site-header--sticky {
+        top: 32px;
+    }
+    
+    /* Body
+    --------------------------------------------- */
+    
+    .content-sidebar,
+    .sidebar-content {
+        
+        .content-sidebar-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .content {
+            width: calc(70% - 25px);
+            margin: 0;
+        }
+        
+        .sidebar {
+            width: calc(30% - 25px);
+            max-width: 400px;
+        }
+    }
+    
+    .sidebar-content .content-sidebar-wrap {
+        flex-direction: row-reverse;
+    }
+    
+    
+    .full-width-content {
+        
+        .content {
+            margin: 0 auto;
+        }
+        
+    }
+    
+    /* Entries */
+    
+    .entry-title,
+    .page-title {
+        font-size: 48px;
+        font-size: 4.8rem;
+    }
+    
+    .entry-meta {
+        font-size: 16px;
+        font-size: 1.6rem;
+    }
+    
+    /* Comments */
+    
+    .comment {
+        padding: 30px;
+    }
+
+    /* Footer
+    --------------------------------------------- */
+
+    /* Home Page
+    --------------------------------------------- */
+}

@@ -1,0 +1,388 @@
+/* Containers & General Styles
+--------------------------------------------- */
+
+.wrap,
+.site-inner {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.site-inner {
+    margin: 30px auto;
+}
+
+.five-sixths,
+.four-sixths,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fourths,
+.three-sixths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+/* Header
+--------------------------------------------- */
+
+.superheader {
+    position: relative;
+    background: $color-primary;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: $white;
+    text-align: center;
+    padding: 5px 0;
+    z-index: 500; /* Top Layer */
+    
+    p {
+        margin: 0;
+    }
+    
+    a {
+        color: $color-secondary;
+        
+        &:hover,
+        &:focus {
+            color: $white;
+        }
+    }
+}
+
+.site-header {
+    padding: 15px 0;
+    background: $white;
+    position: relative;
+    z-index: 1000; /* Top Layer */
+    
+    & > .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+   
+}
+
+.title-area {
+    width: 300px;
+    max-width: 75%;
+}
+
+.site-title,
+.site-description {
+    margin: 0 auto;
+}
+
+.site-title {
+    font-family: $font-secondary;
+    font-size: 38px;
+    font-size: 3.8rem;
+    line-height: 1;
+}
+
+.custom-logo-link {
+    display: block;
+}
+
+.custom-logo {
+    max-height: 90px;
+    width: auto;
+}
+
+.wp-custom-logo .site-title,
+.wp-custom-logo .site-description {
+    top: -9999px;
+}
+
+.nav-primary {
+    display: none;
+}
+
+
+/* Body
+--------------------------------------------- */
+
+/* Site Inner */
+
+.content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.page-template-page_blocks .content {
+    max-width: 100%;
+}
+
+/* Entries */
+
+.entry {
+    margin-bottom: 60px;
+
+    &:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+.entry-title,
+.page-title {
+    
+    a {
+        color: $grey-main;
+    }
+}
+
+.entry-meta {
+    font-family: $font-secondary;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    a {
+        color: $grey-main;
+        
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    
+    i {
+        color: $color-primary;
+    }
+}
+
+.entry-comments-link {
+    margin-left: 10px;
+}
+
+.entry-content {
+    overflow: hidden;
+    
+    p:last-of-type {
+        margin: 0;
+    }
+    
+    
+    ul {
+        margin: 30px 0 30px 30px;
+        list-style: circle;
+        
+        li {
+            list-style-type: circle;
+        }
+        
+        ul {
+            margin: 0 0 0 30px;
+        }
+        
+    }
+    
+    ol {
+        margin: 30px 0 30px 30px;
+        
+        li {
+            list-style-type: decimal;
+        }
+        
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $color-primary;
+    }
+}
+
+.entry-footer {
+    clear: both;
+    margin-top: 30px;
+    padding: 30px 0;
+    border-top: 2px solid $color-tertiary;
+    border-bottom: 2px solid $color-tertiary;
+    text-align: center;
+
+    .entry-meta {
+        margin: 0;
+        
+        & > span {
+            display: inline-block;
+            margin: 0 15px;
+        }
+    }
+    
+}
+
+.entry-comments h3,
+.entry-pings h3,
+.comment-reply-title,
+.woocommerce-tabs h2,
+.related > h2,
+.after-entry .widget-title {
+    display: block;
+    font-size: 34px;
+    font-size: 3.4rem;
+}
+
+/* After Entry Widgets */
+
+.after-entry {
+    margin: 30px 0 0;
+}
+
+/* Comments */
+
+.entry-comments,
+.entry-pings,
+.comment-respond {
+    margin: 30px 0 0;
+}
+
+.comment-list {
+    list-style: none;
+}
+
+.comment {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 2px solid $color-tertiary;
+    
+    .comment {
+        margin-bottom: 0;
+    }
+    
+    .avatar {
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+}
+
+.comment-author, 
+.comment-meta,
+.comment-edit-link,
+.woocommerce-review__author,
+.woocommerce-review__verified,
+.woocommerce-review__published-date {
+    font-size: 10px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+.comment-content {
+    clear: both;
+}
+
+.comment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+    input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    p {
+        margin-bottom: 15px;
+        
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.comment-form label {
+    display: block;
+}
+
+.comment-form-author,
+.comment-form-email {
+    width: 48%;
+}
+
+.comment-notes,
+.comment-form-url,
+.comment-form-cookies-consent,
+.comment-form-comment {
+    width: 100%;
+}
+
+.sidebar,
+.footer-widgets {
+    
+    .widget {
+        margin-bottom: 30px;
+        
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    
+    .widget-title {
+        margin: 0 auto 10px;
+        text-transform: uppercase;
+    }
+ 
+}
+
+/* Pagination */
+
+.pagination {
+    
+    ul {
+        text-align: center;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a {
+        display: block;
+        position: relative;
+        padding: 8px 10px;
+        line-height: 1;
+    }
+    
+    li.active a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $color-secondary;
+        opacity: .2;
+    }
+    
+}
+
+
+/* Footer
+--------------------------------------------- */
+
+/* Home Page
+--------------------------------------------- */

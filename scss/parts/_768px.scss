@@ -1,0 +1,72 @@
+/* Small Tablet / Large Phone Styles
+---------------------------------------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+    
+    /* Containers & General Styles
+    --------------------------------------------- */
+    
+    .site-inner {
+        margin: 45px auto;
+    }
+
+    /* Header
+    --------------------------------------------- */
+    
+    .superheader {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+    
+    .site-header {
+        padding: 30px 0;
+    }
+    
+    .site-title {
+        font-size: 50px;
+        font-size: 5rem;
+    }
+
+    /* Body
+    --------------------------------------------- */
+    
+    .site-hero {
+        padding: 100px 0;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+        font-size: 4.8rem;
+    }
+    
+    /* Entries */
+    
+    .entry-title,
+    .page-title {
+        font-size: 38px;
+        font-size: 3.8rem;
+    }
+    
+    /* Comments */
+    
+    .comment {
+        padding: 15px;
+    }
+
+    /* Footer
+    --------------------------------------------- */
+   
+    
+    /* Home Page
+    --------------------------------------------- */
+
+    
+}
+
+@media (min-width: 780px) {
+    
+    .admin-bar .mobile-nav {
+        top: 32px;
+    }
+    
+}

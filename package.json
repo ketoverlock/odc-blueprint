@@ -1,0 +1,26 @@
+{
+  "name": "odc-blueprint",
+  "version": "1.0.0",
+  "description": "Blueprint for all ODC Genesis Projects",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-scss": "node-sass scss/main.scss scss/main-compiled.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 5 versions' scss/main-compiled.css -o scss/main-prefixed.css",
+    "minify-css": "node-sass scss/main-prefixed.css main.css --output-style compressed",
+    "build-css": "npm-run-all compile-scss prefix-css minify-css"
+  },
+  "author": "Kyrie Tompkins-Overlock",
+  "license": "UNLICENSED",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.3"
+  },
+  "keywords": []
+}

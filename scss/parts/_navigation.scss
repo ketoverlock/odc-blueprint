@@ -1,0 +1,99 @@
+/* Navigation
+---------------------------------------------------------------------------------------------------- */
+
+/* General
+--------------------------------------------- */
+
+
+/* Mobile Nav
+--------------------------------------------- */
+
+.menu-toggle,
+.menu-close {
+    background: none;
+    color: $color-primary;
+    font-size: 25px;
+    font-size: 2.5rem;
+    padding-right: 0;
+    border: 0;
+    
+    &:hover,
+    &:focus {
+        background: none;
+        color: $color-secondary;
+    }
+}
+
+.menu-close {
+    float: right;
+    margin-bottom: 30px;
+}
+
+.mobile-nav {
+    position: fixed;
+    display: none;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    padding: 30px 5%;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    -webkit-overflow-scrolling: touch;
+    z-index: 500;
+    
+    .nav-primary {
+        display: block;
+        clear: both;
+        
+        li {
+            position: relative;
+        }
+        
+        a {
+            display: block;
+            font-size: 18px;
+            font-size: 1.8rem;
+            text-align: center;
+            padding: 10px;
+            color: $color-primary;
+            font-family: $font-secondary;
+        }
+        
+        .sub-menu {
+            background: $color-tertiary;
+        }
+    }
+    
+    .submenu-toggle {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        font-size: 20px;
+        font-size: 2rem;
+        background: none;
+        color: $color-primary;
+        border: 0;
+        
+        &:hover,
+        &:focus {
+            background: none;
+            color: $color-primary;
+        }
+    }
+
+}
+
+.admin-bar .mobile-nav {
+    top: 46px;
+}
+
+.fixed {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+.rotated { 
+    transform: rotate(180deg);
+}
