@@ -144,23 +144,6 @@
 }
 
 .entry-meta {
-    font-family: $font-secondary;
-    font-size: 14px;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    
-    a {
-        color: $grey-main;
-        
-        &:hover {
-            color: $color-primary;
-        }
-    }
-    
-    i {
-        color: $color-primary;
-    }
 }
 
 .entry-comments-link {
