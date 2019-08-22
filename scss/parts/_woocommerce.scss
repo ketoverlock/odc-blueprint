@@ -47,10 +47,17 @@
     }
     
     div.product .woocommerce-tabs ul.tabs {
-        padding: 0 0 0 1px;
+        padding: 0 0 0 5px;
+        
+        &:before {
+            border-bottom: 1px solid $color-tertiary;
+        }
         
         li {
+            border: 1px solid $color-tertiary;
+            background: $color-tertiary;
             border-radius: 0 !important;
+            margin-right: 5px;
             
             &:before,
             &:after {
