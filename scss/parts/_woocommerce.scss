@@ -46,10 +46,28 @@
         }
     }
     
+    div.product .woocommerce-tabs ul.tabs {
+        padding: 0 0 0 1px;
+        
+        li {
+            border-radius: 0 !important;
+            
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+    }
+    
+    li.products .star-rating {
+        margin: 0 auto .5em !important;
+    }
+    
 }
 
 .onsale {
     background-color: $color-secondary !important;
+    padding: 0 5px !important;
 }
 
 .woocommerce-store-notice, 
