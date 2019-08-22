@@ -288,8 +288,3 @@ function odc_footer_creds_filter( $creds ) {
 	$creds = 'Copyright &copy; ' . date('Y') . ' ' . get_bloginfo('name') . ' | Design by <a href="https://overlockdesign.co/" target="_blank">Overlock Design Co.</a>';
 	return $creds;
 } add_filter('genesis_footer_creds_text', 'odc_footer_creds_filter');
-
-// Detect Color
-function color_contrast($hexcolor, $dark = '#333', $light = '#FFFFFF') {
-    return (hexdec($hexcolor) > 0xffffff/2) ? $dark : $light;
-}
