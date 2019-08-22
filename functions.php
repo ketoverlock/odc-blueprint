@@ -48,10 +48,6 @@ function detect_JS() { ?>
     
 ****************************************************************/
 
-// Include Customizer Files
-include_once( get_stylesheet_directory() . '/lib/customizer.php' );
-include_once( get_stylesheet_directory() . '/lib/output.php' );
-
 // Adds support for HTML5 markup structure.
 add_theme_support(
 	'html5', array(
