@@ -261,9 +261,17 @@
     justify-content: space-between;
     margin-bottom: 30px;
     
+    input {
+        display: block;
+    }
+    
     input[type="checkbox"] {
         display: inline-block;
         margin-right: 10px;
+    }
+    
+    label {
+        display: inline;
     }
     
     p {
@@ -273,10 +281,6 @@
             margin-bottom: 0;
         }
     }
-}
-
-.comment-form label {
-    display: block;
 }
 
 .comment-form-author,
