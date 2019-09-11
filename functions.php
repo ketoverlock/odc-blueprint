@@ -287,4 +287,4 @@ function odc_comments_gravatar( $args ) {
 function odc_footer_creds_filter( $creds ) {
 	$creds = 'Copyright &copy; ' . date('Y') . ' ' . get_bloginfo('name') . ' | Design by <a href="https://overlockdesign.co/" target="_blank">Overlock Design Co.</a>';
 	return $creds;
-} add_filter('genesis_footer_creds_text', 'odc_footer_creds_filter');
+} add_filter('genesis_footer_output', 'odc_footer_creds_filter');
