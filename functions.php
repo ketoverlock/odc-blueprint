@@ -180,6 +180,10 @@ function odc_superheader() {
     <?php endif;
 } add_action('genesis_before_header', 'odc_superheader');
 
+// Reposition the breadcrumbs
+remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
+add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
+
 /****************************************************************
 
     WooCommerce
@@ -236,6 +240,31 @@ function odc_woo_setup() {
 // Add Image Sizes
 add_image_size( 'featured-image', 850, 0, false );
 add_image_size( 'hero-image', 2000, 600, TRUE );
+
+//* Modify breadcrumb arguments.
+function odc_breadcrumb_args( $args ) {
+    
+	$args['home'] = 'Home';
+	$args['sep'] = ' / ';
+	$args['list_sep'] = ', '; // Genesis 1.5 and later
+	$args['prefix'] = '<div class="breadcrumb wrap">';
+	$args['suffix'] = '</div>';
+	$args['heirarchial_attachments'] = true; // Genesis 1.5 and later
+	$args['heirarchial_categories'] = true; // Genesis 1.5 and later
+	$args['display'] = true;
+	$args['labels']['prefix'] = '';
+	$args['labels']['author'] = '';
+	$args['labels']['category'] = ''; // Genesis 1.6 and later
+	$args['labels']['tag'] = '';
+	$args['labels']['date'] = '';
+	$args['labels']['search'] = 'Search Results for ';
+	$args['labels']['tax'] = '';
+	$args['labels']['post_type'] = '';
+	$args['labels']['404'] = 'Not found: '; // Genesis 1.5 and later
+    
+    return $args;
+    
+} add_filter( 'genesis_breadcrumb_args', 'odc_breadcrumb_args' );
 
 // Filter Archive Titles
 function odc_archive_title( $title ) {
