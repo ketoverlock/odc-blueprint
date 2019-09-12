@@ -245,7 +245,7 @@ add_image_size( 'hero-image', 2000, 600, TRUE );
 function odc_breadcrumb_args( $args ) {
     
 	$args['home'] = 'Home';
-	$args['sep'] = ' / ';
+	$args['sep'] = ' &raquo; ';
 	$args['list_sep'] = ', '; // Genesis 1.5 and later
 	$args['prefix'] = '<div class="breadcrumb wrap">';
 	$args['suffix'] = '</div>';
