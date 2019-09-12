@@ -19,13 +19,13 @@ jQuery(function($) {
         
         $('.menu-toggle').click(function() {
             $('.site-container').addClass('fixed');
-            $('.mobile-nav').fadeIn();
+            $('.mobile-nav').addClass('mobile-nav--visible');
             $('.mobile-nav .genesis-nav-menu .menu-item-has-children').append('<button class="submenu-toggle"><i class="fas fa-angle-down" aria-hidden="true"></i></button>');
         });
         
         $('.menu-close').click(function() {
             $('.site-container').removeClass('fixed');
-            $('.mobile-nav').fadeOut();
+            $('.mobile-nav').removeClass('mobile-nav--visible');
             $('.submenu-toggle').remove();
         });
         
