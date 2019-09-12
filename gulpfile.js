@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var scss = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var uglify = require('gulp-uglify');
+var rename = require('gulp-rename');
 
 gulp.task('scss', function() {
     return gulp
@@ -10,9 +12,17 @@ gulp.task('scss', function() {
         .pipe(gulp.dest(''));
 });
 
-gulp.task('watch', function() {
+gulp.task('js-compress', function() {
     return gulp
-        .watch('./scss/**/*.scss', ['scss']);
+        .src('./js/*.js')
+        .pipe(uglify())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./js/'));
 });
 
-gulp.task('default', ['scss', 'watch']);
+gulp.task('watch', function() {
+    gulp.watch('./scss/**/*.scss', ['scss']);
+    gulp.watch('./js/*.js', ['js-compress']);
+});
+
+gulp.task('default', ['scss', 'js-compress', 'watch']);

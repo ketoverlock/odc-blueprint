@@ -27,7 +27,7 @@ function odc_enqueue_scripts_styles() {
     wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.0.13/css/all.css', array(), null);
     wp_enqueue_style( 'odc-css', get_stylesheet_directory_uri() . '/main.css', array(), CHILD_THEME_VERSION );
     
-    wp_enqueue_script( 'odc-scripts', get_stylesheet_directory_uri() . '/js/odc-scripts.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+    wp_enqueue_script( 'odc-scripts', get_stylesheet_directory_uri() . '/js/odc-scripts.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
 } add_action( 'wp_enqueue_scripts', 'odc_enqueue_scripts_styles' );
 
@@ -200,7 +200,7 @@ function odc_woo_scripts() {
     if (class_exists( 'WooCommerce' ) && is_woocommerce()) {
         
         wp_enqueue_script( 'odc-match-height', get_stylesheet_directory_uri() . '/js/jquery.matchHeight.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-        wp_enqueue_script( 'odc-woo-scripts', get_stylesheet_directory_uri() . '/js/odc-woo-scripts.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+        wp_enqueue_script( 'odc-woo-scripts', get_stylesheet_directory_uri() . '/js/odc-woo-script.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
         
         wp_add_inline_script( 'odc-match-height', "jQuery(window).load( function() { jQuery( '.woocommerce-loop-product__link').matchHeight(); });" );
     
