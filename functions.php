@@ -157,9 +157,9 @@ unregister_sidebar( 'sidebar-alt' );
 
 genesis_register_sidebar(
     array(
-        'id'            => 'superheader',
-        'name'          => __( 'Superheader' ),
-        'description'   => __( 'The superheader widget area.' ),
+        'id'            => 'top-bar',
+        'name'          => __( 'Top Bar' ),
+        'description'   => __( 'The top bar widget area.' ),
 ) );
 
 
@@ -170,15 +170,15 @@ genesis_register_sidebar(
 ****************************************************************/
 
 // Add Top Bar Widget Areas
-function odc_superheader() {
-    if (is_active_sidebar('superheader')) : ?>
-        <div class="superheader">
+function odc_top_bar() {
+    if (is_active_sidebar('top-bar')) : ?>
+        <div class="top-bar">
             <div class="wrap">
-                    <?php genesis_widget_area('superheader'); ?>
+                    <?php genesis_widget_area('top-bar'); ?>
             </div>
         </div>
     <?php endif;
-} add_action('genesis_before_header', 'odc_superheader');
+} add_action('genesis_before_header', 'odc_top_bar');
 
 // Reposition the breadcrumbs
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );

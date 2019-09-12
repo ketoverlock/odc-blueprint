@@ -2,7 +2,7 @@ jQuery(function($) {
     
     function stickyHeader() {
         
-        var scrollHeight = $('.superheader').outerHeight();
+        var scrollHeight = $('.top-bar').outerHeight();
 
         if ($(window).scrollTop() > scrollHeight && $(window).width() > 1024) {
             $('.site-header').addClass('site-header--sticky');
