@@ -47,11 +47,16 @@
     
     a {
         color: $color-secondary;
+        font-weight: 700;
         
         &:hover,
         &:focus {
             color: $white;
         }
+    }
+    
+    .widget-title {
+        display: none;
     }
 }
 
