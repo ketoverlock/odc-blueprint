@@ -448,10 +448,7 @@ th:first-child {
 
 .screen-reader-shortcut,
 .screen-reader-text,
-.screen-reader-text span,
-.hero-enabled.single .entry-title,
-.hero-enabled.page:not(.home) .entry-title,
-.gform_wrapper .top_label .gfield_label {
+.screen-reader-text span {
 	border: 0;
 	clip: rect(0, 0, 0, 0);
 	height: 1px;
