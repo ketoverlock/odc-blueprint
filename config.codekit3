@@ -118,7 +118,7 @@
     "\/scss\/main.scss" : {
       "aP" : 1,
       "bl" : 1,
-      "co" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -127,7 +127,7 @@
       "oAP" : "\/main.css",
       "oF" : 2,
       "oS" : 3,
-      "pg" : 1,
+      "pg" : 0,
       "sct" : 1
     },
     "\/scss\/parts\/_768px.scss" : {
