@@ -280,14 +280,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/scss\/theme.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/scss\/theme-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
     "\/search.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -307,6 +299,14 @@
       "oAP" : "\/style-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/theme.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/theme-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/woocommerce.php" : {
       "cB" : 0,
