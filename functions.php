@@ -3,7 +3,7 @@
 /****************************************************************
 
     Genesis Basics
-    
+
 ****************************************************************/
 
 // Starts the engine.
@@ -17,17 +17,17 @@ define( 'CHILD_THEME_VERSION', '1.0.1' );
 /****************************************************************
 
     Enqueue Scripts & Styles
-    
+
 ****************************************************************/
 
 // Enqueue Scripts & Styles
 function odc_enqueue_scripts_styles() {
-    
+
     wp_enqueue_style( 'webfonts', '//fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,700,700i', array(), CHILD_THEME_VERSION );
     wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.0.13/css/all.css', array(), null);
     wp_enqueue_style( 'odc-css', get_stylesheet_directory_uri() . '/main.css', array(), CHILD_THEME_VERSION );
-    
-    wp_enqueue_script( 'odc-scripts', get_stylesheet_directory_uri() . '/js/min/odc-scripts.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+
+    wp_enqueue_script( 'odc-scripts', get_stylesheet_directory_uri() . '/js/min/odc-scripts-min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
 } add_action( 'wp_enqueue_scripts', 'odc_enqueue_scripts_styles' );
 
@@ -38,14 +38,14 @@ function detect_JS() { ?>
     <script type="text/javascript">
         jQuery('body').addClass('js');
     </script>
-    
+
 <?php } add_action('genesis_before', 'detect_JS', 5);
 
 
 /****************************************************************
 
     Supports & Outputs
-    
+
 ****************************************************************/
 
 // Adds support for HTML5 markup structure.
@@ -108,7 +108,7 @@ function odc_remove_page_templates( $templates ) {
 /****************************************************************
 
     Navigation
-    
+
 ****************************************************************/
 
 // Renames primary and secondary navigation menus.
@@ -133,13 +133,13 @@ function odc_mobile_toggle() { ?>
 function odc_mobile_container() { ?>
     <div class="mobile-nav">
         <button class="menu-close"><i class="fas fa-times" aria-hidden="true"></i><span class="screen-reader-text">Close Menu</span></button>
-    </div> 
+    </div>
 <?php } add_action('genesis_after', 'odc_mobile_container');
 
 /****************************************************************
 
     Widgets
-    
+
 ****************************************************************/
 
 
@@ -166,7 +166,7 @@ genesis_register_sidebar(
 /****************************************************************
 
     Structure
-    
+
 ****************************************************************/
 
 // Add Top Bar Widget Areas
@@ -187,7 +187,7 @@ add_action( 'genesis_after_header', 'genesis_do_breadcrumbs' );
 /****************************************************************
 
     WooCommerce
-    
+
 ****************************************************************/
 
 // Declare WooCommerce Support
@@ -196,16 +196,16 @@ add_theme_support( 'woocommerce' );
 // Enqueue Woo Scripts
 
 function odc_woo_scripts() {
-    
+
     if (class_exists( 'WooCommerce' ) && is_woocommerce()) {
-        
+
         wp_enqueue_script( 'odc-match-height', get_stylesheet_directory_uri() . '/js/min/jquery.matchHeight.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-        wp_enqueue_script( 'odc-woo-scripts', get_stylesheet_directory_uri() . '/js/min/odc-woo-scripts.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-        
+        wp_enqueue_script( 'odc-woo-scripts', get_stylesheet_directory_uri() . '/js/min/odc-woo-scripts-min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+
         wp_add_inline_script( 'odc-match-height', "jQuery(window).load( function() { jQuery( '.woocommerce-loop-product__link').matchHeight(); });" );
-    
+
     }
-    
+
 } add_action('wp_enqueue_scripts', 'odc_woo_scripts');
 
 // Add Product Gallery Fancy Bits
@@ -219,13 +219,13 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 // Setup Woo Functions
 function odc_woo_setup() {
-    
+
     if (class_exists( 'WooCommerce' )) {
-        
+
         if (is_woocommerce() || is_account_page() || is_cart() || is_checkout()) {
             add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
         }
-        
+
     }
 
 } add_action('genesis_meta', 'odc_woo_setup');
@@ -234,7 +234,7 @@ function odc_woo_setup() {
 /****************************************************************
 
     Misc.
-    
+
 ****************************************************************/
 
 // Add Image Sizes
@@ -243,7 +243,7 @@ add_image_size( 'hero-image', 2000, 600, TRUE );
 
 //* Modify breadcrumb arguments.
 function odc_breadcrumb_args( $args ) {
-    
+
 	$args['home'] = 'Home';
 	$args['sep'] = ' &raquo; ';
 	$args['list_sep'] = ', '; // Genesis 1.5 and later
@@ -261,14 +261,14 @@ function odc_breadcrumb_args( $args ) {
 	$args['labels']['tax'] = '';
 	$args['labels']['post_type'] = '';
 	$args['labels']['404'] = 'Not found: '; // Genesis 1.5 and later
-    
+
     return $args;
-    
+
 } add_filter( 'genesis_breadcrumb_args', 'odc_breadcrumb_args' );
 
 // Filter Archive Titles
 function odc_archive_title( $title ) {
-    
+
     if ( is_category() ) {
         $title = single_cat_title( '', false );
     } elseif ( is_tag() ) {
@@ -278,10 +278,10 @@ function odc_archive_title( $title ) {
     } elseif ( is_tax() ) {
         $title = single_term_title( '', false );
     }
-  
+
     return $title;
 }
- 
+
 add_filter( 'get_the_archive_title', 'odc_archive_title' );
 
 // More Link
