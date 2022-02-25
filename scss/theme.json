@@ -1,0 +1,199 @@
+{
+  "version": "2",
+  "settings": {
+    "appearanceTools": false,
+    "border": {
+      "color": false,
+      "radius": false,
+      "style": false,
+      "width": false
+    },
+    "color": {
+      "background": true,
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultGradients": false,
+      "defaultPalette": true,
+      "duotone": [],
+      "gradients": [
+        {
+          "gradient": "linear-gradient(45deg,rgb(182,206,208) 0%,rgb(245,194,203) 100%)",
+          "slug": "light-blue-and-pink",
+          "name": "Light Blue and Pink"
+        },
+        {
+          "gradient": "linear-gradient(45deg,rgb(182,206,208) 0%,rgb(0,161,155) 100%)",
+          "slug": "light-blue-and-teal",
+          "name": "Light Blue and Teal"
+        },
+        {
+          "gradient": "linear-gradient(45deg,rgb(0,161,155) 0%,rgb(162,212,94) 100%)",
+          "slug": "teal-and-green",
+          "name": "Teal and Green"
+        },
+        {
+          "gradient": "linear-gradient(45deg,rgb(0,161,155) 0%,rgb(3,92,103) 100%)",
+          "slug": "teal-and-dark-teal",
+          "name": "Teal and Dark Teal"
+        }
+      ],
+      "link": true,
+      "palette": [
+        {
+          "color": "#00a19b",
+          "slug": "teal",
+          "name": "Teal"
+        },
+        {
+          "color": "#a2d45e",
+          "slug": "green",
+          "name": "Green"
+        },
+        {
+          "color": "#035c67",
+          "slug": "dark-teal",
+          "name": "Dark Teal"
+        },
+        {
+          "color": "#b6ced0",
+          "slug": "light-blue",
+          "name": "Light Blue"
+        },
+        {
+          "color": "#f5c2cb",
+          "slug": "pink",
+          "name": "Pink"
+        }
+      ],
+      "text": true
+    },
+    "custom": {
+      "spacing": {
+        "small": "max(1.25rem, 5vw)",
+        "medium": "clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)))",
+        "large": "clamp(4rem, 10vw, 8rem)",
+        "outer": "var(--wp--custom--spacing--small, 1.25rem)"
+      },
+      "typography": {
+        "fontSize": {
+          "gigantic": "clamp(3rem, 6vw, 4rem)",
+          "colossal": "clamp(4rem, 8vw, 6.25rem)"
+        },
+        "lineHeight": {
+          "tiny": 1.15,
+          "small": 1.2,
+          "medium": 1.4,
+          "normal": 1.6
+        }
+      }
+    },
+    "layout": {
+      "contentSize": "850px",
+      "wideSize": "1250px"
+    },
+    "spacing": {
+      "blockGap": null,
+      "margin": true,
+      "padding": true,
+      "units": [
+        "px",
+        "em",
+        "rem",
+        "vh",
+        "vw"
+      ]
+    },
+    "typography": {
+      "customFontSize": true,
+      "dropCap": false,
+      "fontFamilies": [
+        {
+          "fontFamily": "sofia-pro, sans-serif",
+          "name": "Sofia Pro",
+          "slug": "sofia-pro"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "Normal",
+          "size": "18px",
+          "slug": "normal"
+        },
+        {
+          "name": "Small",
+          "size": "14px",
+          "slug": "small"
+        },
+        {
+          "name": "Large",
+          "size": "22px",
+          "slug": "large"
+        }
+      ],
+      "fontStyle": true,
+      "fontWeight": true,
+      "letterSpacing": true,
+      "lineHeight": true,
+      "textDecoration": true,
+      "textTransform": true
+    }
+  },
+  "styles": {
+    "border": {
+      "color": "",
+      "radius": "",
+      "style": "",
+      "width": ""
+    },
+    "color": {
+      "background": "",
+      "gradient": "",
+      "text": ""
+    },
+    "filter": {
+      "duotone": ""
+    },
+    "spacing": {
+      "blockGap": "0",
+      "margin": {
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0"
+      },
+      "padding": {
+        "top": "",
+        "right": "",
+        "bottom": "",
+        "left": ""
+      }
+    },
+    "typography": {
+      "fontFamily": "sofia-pro, sans-serif",
+      "fontSize": "18px",
+      "fontStyle": "",
+      "fontWeight": "",
+      "letterSpacing": "",
+      "lineHeight": "",
+      "textDecoration": "",
+      "textTransform": ""
+    },
+    "elements": {
+      "link": {
+        "border": {},
+        "color": {},
+        "spacing": {},
+        "typography": {}
+      },
+      "h1": {},
+      "h2": {},
+      "h3": {},
+      "h4": {},
+      "h5": {},
+      "h6": {}
+    }
+  },
+  "customTemplates": [],
+  "templateParts": []
+}
