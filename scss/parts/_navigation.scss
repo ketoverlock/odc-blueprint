@@ -11,8 +11,8 @@
 .menu-toggle,
 .menu-close {
     background: none;
-    color: $color-primary;
-    font-size: 25px;
+    color: var(--odc-primary);
+    
     font-size: 2.5rem;
     padding-right: 0;
     border: 0;
@@ -20,13 +20,13 @@
     &:hover,
     &:focus {
         background: none;
-        color: $color-secondary;
+        color: var(--odc-secondary);
     }
 }
 
 .menu-close {
     float: right;
-    margin-bottom: 30px;
+    margin-bottom: var(--odc-spacer-md);
 }
 
 .mobile-nav {
@@ -35,17 +35,17 @@
     overflow: auto;
     top: 0;
     right: -100%;
-    padding: 30px 5%;
+    padding: var(--odc-spacer-md);
     width: 100%;
     height: 100%;
-    background: $white;
+    background: var(--odc-white);
     -webkit-overflow-scrolling: touch;
     transition: all .5s ease-in-out;
-    z-index: 500;
+    z-index: 50000;
 
     &.mobile-nav--visible {
         right: 0;
-        box-shadow: 0px 10px 15px fade-out($black, .95);
+        box-shadow: 0px 10px 15px rgba(0,0,0,.2);;
     }
 
     .nav-primary {
@@ -58,16 +58,16 @@
 
         a {
             display: block;
-            font-size: 18px;
+            
             font-size: 1.8rem;
             text-align: center;
             padding: 10px;
-            color: $color-primary;
-            font-family: $font-secondary;
+            color: var(--odc-primary);
+            font-family: var(--odc-font-secondary);
         }
 
         .sub-menu {
-            background: $color-tertiary;
+            background: var(--odc-tertiary);
         }
     }
 
@@ -75,16 +75,16 @@
         position: absolute;
         top: 0;
         right: 0;
-        font-size: 20px;
+        
         font-size: 2rem;
         background: none;
-        color: $color-primary;
+        color: var(--odc-primary);
         border: 0;
 
         &:hover,
         &:focus {
             background: none;
-            color: $color-primary;
+            color: var(--odc-primary);
         }
     }
 
@@ -99,6 +99,7 @@
     overflow: hidden;
     width: 100%;
 }
+
 
 .rotated {
     transform: rotate(180deg);

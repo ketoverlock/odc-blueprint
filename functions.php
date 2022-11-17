@@ -12,7 +12,7 @@ require_once get_template_directory() . '/lib/init.php';
 // Defines the child theme (do not remove).
 define( 'CHILD_THEME_NAME', 'Overlock Design Co. Blueprint' );
 define( 'CHILD_THEME_URL', 'https://overlockdesign.co' );
-define( 'CHILD_THEME_VERSION', '1.0.2' );
+define( 'CHILD_THEME_VERSION', '1.0.3' );
 
 /****************************************************************
 
@@ -31,15 +31,16 @@ function odc_enqueue_scripts_styles() {
 
 } add_action( 'wp_enqueue_scripts', 'odc_enqueue_scripts_styles' );
 
-// Detect JS
-
-function detect_JS() { ?>
-
-    <script type="text/javascript">
-        jQuery('body').addClass('js');
-    </script>
-
-<?php } add_action('genesis_before', 'detect_JS', 5);
+function odc_noscript() { ?>
+  <noscript>
+    <style>
+      .fade-in {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+      }
+    </style>
+  </noscript>
+<?php } add_action('wp_footer', 'odc_noscript');
 
 
 /****************************************************************
@@ -198,12 +199,6 @@ add_theme_support( 'woocommerce' );
 function odc_woo_scripts() {
 
     if (class_exists( 'WooCommerce' ) && is_woocommerce()) {
-
-        wp_enqueue_script( 'odc-match-height', get_stylesheet_directory_uri() . '/js/min/jquery.matchHeight.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-        wp_enqueue_script( 'odc-woo-scripts', get_stylesheet_directory_uri() . '/js/min/odc-woo-scripts-min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-
-        wp_add_inline_script( 'odc-match-height', "jQuery(window).load( function() { jQuery( '.woocommerce-loop-product__link').matchHeight(); });" );
-
     }
 
 } add_action('wp_enqueue_scripts', 'odc_woo_scripts');

@@ -7,109 +7,46 @@
     --------------------------------------------- */
     
     body {
-        font-size: 16px;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     
-    .five-sixths,
-    .four-sixths,
-    .one-fourth,
-    .one-half,
-    .one-sixth,
-    .one-third,
-    .three-fourths,
-    .three-sixths,
-    .two-fourths,
-    .two-sixths,
-    .two-thirds {
-        float: left;
-        margin-left: 2.564102564102564%;
-    }
-
-    .one-half,
-    .three-sixths,
-    .two-fourths {
-        width: 48.717948717948715%;
-    }
-
-    .one-third,
-    .two-sixths {
-        width: 31.623931623931625%;
-    }
-
-    .four-sixths,
-    .two-thirds {
-        width: 65.81196581196582%;
-    }
-
-    .one-fourth {
-        width: 23.076923076923077%;
-    }
-
-    .three-fourths {
-        width: 74.35897435897436%;
-    }
-
-    .one-sixth {
-        width: 14.52991452991453%;
-    }
-
-    .five-sixths {
-        width: 82.90598290598291%;
-    }
-
-    .first {
-        clear: both;
-        margin-left: 0;
-    }
-    
-    .site-inner {
-        margin: 60px auto;
+    .site-inner,
+    .wrap {
+        width: calc(100% - (4 * var(--odc-spacer-md)));
     }
     
     .alignright {
         float: right;
-        margin: 0 0 15px 15px;
+        margin: 0 0 var(--odc-spacer-md) var(--odc-spacer-md);
     }
     
     .alignleft {
         float: left;
-        margin: 0 15px 15px 0;
+        margin: 0 var(--odc-spacer-md) var(--odc-spacer-md) 0;
     }
     
     .alignwide {
         margin-left: -75px;
         margin-right: -75px;
         max-width: 1300px;
-        margin-bottom: 30px;
+        margin-bottom: var(--odc-spacer-md);
     }
     
     .wp-block-image.alignwide {
         text-align: center;
-    }
-    
-    .js {
-        
-        .fade-in {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all .8s ease-in-out;
-        }
-        
-        .fade-in--visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
     }
 
     /* Header
     --------------------------------------------- */
     
     .top-bar {
-        font-size: 16px;
+        
         font-size: 1.6rem;
         padding: 10px 0;
+    }
+    
+    .site-header {
+        padding: var(--odc-spacer-md) 0;
     }
     
     .menu-toggle,
@@ -138,16 +75,16 @@
             
             a {
                 display: block;
-                font-size: 18px;
+                
                 font-size: 1.8rem;
                 text-align: center;
-                padding: 10px 15px;
-                color: $color-primary;
-                font-family: $font-secondary;
+                padding: 10px var(--odc-spacer-sm);
+                color: var(--odc-primary);
+                font-family: var(--odc-font-secondary);
                 
                 &:hover,
                 &:focus {
-                    color: $color-secondary;
+                    color: var(--odc-secondary);
                 }
             }
             
@@ -165,8 +102,8 @@
                 top: 100%;
                 left: 0;
                 width: 200px;
-                background: $white;
-                box-shadow: 0px 10px 15px fade-out($black, .95);
+                background: var(--odc-white);
+                box-shadow: 0px 10px 15px rgba(0,0,0,.2);
                 z-index: 1000; /* Above Everything */
 
                 li {
@@ -193,29 +130,6 @@
 
     }
     
-    .site-header {
-        transition: all .3s ease-in-out;
-        transform:translate3d(0,0,0);
-    }
-
-    .site-header--sticky {
-        position: sticky;
-        top: 0;
-        width: 100%;
-        padding: 15px 0;
-        box-shadow: 0px 10px 15px fade-out($black, .95);
-        z-index: 500; /* Above Everything */
-        
-        .site-title {
-            font-size: 40px;
-            font-size: 4rem;
-        }
-        
-        .custom-logo {
-            max-height: 70px;
-        }
-    }
-    
     .admin-bar .site-header--sticky {
         top: 32px;
     }
@@ -232,13 +146,13 @@
         }
         
         .content {
-            width: calc(70% - 25px);
+            width: calc(70% - (2 * var(--odc-spacer-sm)));
             margin: 0;
+            max-width: unset;
         }
         
         .sidebar {
-            width: calc(30% - 25px);
-            max-width: 400px;
+            width: calc(30% - (2 * var(--odc-spacer-sm)));
         }
     }
     
@@ -251,6 +165,7 @@
         
         .content {
             margin: 0 auto;
+            max-width: 850px;
         }
         
     }
@@ -259,37 +174,31 @@
     
     .entry-title,
     .page-title {
-        font-size: 48px;
+        
         font-size: 4.8rem;
     }
     
     .entry-meta {
-        font-size: 16px;
+        
         font-size: 1.6rem;
     }
     
     /* Comments */
     
     .comment {
-        padding: 30px;
+        padding: var(--odc-spacer-md);
     }
 
     /* Footer
     --------------------------------------------- */
     
     .footer-widgets {
-        
+        padding: var(--odc-spacer-lg) 0;
+    
         .wrap {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .widget-area {
-            width: calc(33.333% - 25px);
-        }
-        
-        .widget-area + .widget-area {
-            margin: 0;
+            grid-gap: var(--odc-spacer-lg);
+            grid-template-columns: 1fr 1fr 1fr;
+            
         }
         
     }

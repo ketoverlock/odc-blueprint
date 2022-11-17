@@ -6,24 +6,16 @@
     /* Containers & General Styles
     --------------------------------------------- */
     
-    .site-inner {
-        margin: 45px auto;
-    }
-
+    
     /* Header
     --------------------------------------------- */
     
     .top-bar {
-        font-size: 14px;
+        
         font-size: 1.4rem;
     }
     
-    .site-header {
-        padding: 30px 0;
-    }
-    
     .site-title {
-        font-size: 50px;
         font-size: 5rem;
     }
     
@@ -38,14 +30,13 @@
     
     .entry-title,
     .page-title {
-        font-size: 38px;
         font-size: 3.8rem;
     }
     
     /* Comments */
     
     .comment {
-        padding: 15px;
+        padding: var(--odc-spacer-sm);
     }
 
     /* Footer
